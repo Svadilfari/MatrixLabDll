@@ -46,3 +46,15 @@ Returns the max element of this matrix
 Returns the rank of this matrix
 ### - Transpose
 Returns the Matrix -- transposed version of this matrix
+
+## Heirs of class Matrix:
+### class IdMatriix
+The identity matrix
+### class UpperTriMatrix
+The upper triangular matrix
+### class LowerTriMatrix
+The lower triangular matrix
+### class DiagonalMatrix
+The diagonal matrix
+### class SymmetricMatrix
+The symmetric matrix
