@@ -3,7 +3,9 @@
 This is a C++ library for **matrix operations** and realisation of **PCA algorithm**
 
 ## class Matrix:
-
+### Contains:
+**M** -- number of rows
+**N** -- number of columns
 ### - get_rows 
 Returns the number of rows in matrix
 ### - get_columns 
@@ -63,10 +65,10 @@ The symmetric matrix
 
 ## class RSA
 ### Contains:
-**Matrix** mX -- the matrix of data
-**Matrix** m_scores -- the matrix of scores (result of the PCA algorithm)
-**Matrix** m_loadings -- the matrix of loadings (result of the PCA algorithm)
-**Matrix** mE -- the matrix of residuals (result of the PCA algorithm)
+**mX** -- the matrix of data
+**m_scores** -- the matrix of scores (result of the PCA algorithm)
+**m_loadings** -- the matrix of loadings (result of the PCA algorithm)
+**mE** -- the matrix of residuals (result of the PCA algorithm)
 ### - center
 Gets the Matrix A
 Returns Matrix -- centered matrix A
@@ -88,8 +90,8 @@ Returns mE
 
 ## class Residuals - heir of RSA
 ### Contains:
-**std::vector\<double\>** m_lambda -- vector of principal components
-**int** mPc -- number of principal components
+**m_lambda** -- std::vector of principal components
+**mPc** -- number of principal components
 ### - leverages
 Returns std::vector of leverages of residual matrix
 ### - mean_leverage
