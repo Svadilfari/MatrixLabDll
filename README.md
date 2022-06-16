@@ -7,36 +7,42 @@ This is a C++ library for **matrix operations** and realisation of **PCA algorit
 ### - get_rows 
 Returns the number of rows in matrix
 ### - get_columns 
-Returns the number of rows in matrix
+Returns the number of columns in matrix
 ### - get_matrix 
-Returns the number of rows in matrix
+Returns the std::vector of std::vectors of matrix rows
 ### - get_row_i 
-Returns the number of rows in matrix
+Get the number i
+Returns Matrix -- vector of the elements of i_th row 
 ### - get_column_j
-Returns the number of rows in matrix
+Get the number j
+Returns Matrix -- vector of the elements of j_th column
 ### - is_square
-Returns the number of rows in matrix
+Returns true if matrix is square
 ### - is_same_size
-Returns the number of rows in matrix
+Get the Matrix B
+Returns true if this matrix is the same size as B
 ### - can_be_mult 
-Returns the number of rows in matrix
+Get the Matrix B
+Returns true if it is possible to multiply this matrix and matrix B
 ### - is_vector
-Returns the number of rows in matrix
+Returns true if this matrix is a vector
 ### - concatenate
-Returns the number of rows in matrix
+Get the Matrix B
+Returns the Matrix -- a concatenation of this matrix and B 
 ### - Det
-Returns the number of rows in matrix
+Returns the determinant of the matrix
 ### - Inverse 
-Returns the number of rows in matrix
+Returns the Matrix -- inversion of this matrix
 ### - Adamar
-Returns the number of rows in matrix
+Get the Matrix B
+Returns the Matrix -- Adamar multiplication of this matrix and B
 ### - Trace 
-Returns the number of rows in matrix
+Returns the trace of this matrix
 ### - Norm
-Returns the number of rows in matrix
+Returns the Norm of this matrix (if this matrix is a vector, returns the norm of vector)
 ### - MaxNorm
-Returns the number of rows in matrix
+Returns the max element of this matrix
 ### - Rank 
-Returns the number of rows in matrix
+Returns the rank of this matrix
 ### - Transpose
-Returns the number of rows in matrix
+Returns the Matrix -- transposed version of this matrix
