@@ -58,3 +58,28 @@ The lower triangular matrix
 The diagonal matrix
 ### class SymmetricMatrix
 The symmetric matrix
+
+## class PCA
+Contains:
+**Matrix** mX -- the matrix of data
+**Matrix** m_scores -- the matrix of scores (result of the PCA algorithm)
+**Matrix** m_loadings -- the matrix of loadings (result of the PCA algorithm)
+**Matrix** mE -- the matrix of residuals (result of the PCA algorithm)
+
+### - center
+Gets the Matrix A
+Returns Matrix -- centered matrix A
+### - scaling
+Gets the Matrix A
+Returns Matrix -- scaled matrix of data
+### - NIPALS
+Get the number of principal components
+Returns the std::vector of Matrix -- scores, loadings and residuals
+### - get_X
+Returns mX
+### - get_scores
+Returns m_scores
+### - get_loadings
+Returns m_scores
+### - get_E
+Returns mE
