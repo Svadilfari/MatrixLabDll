@@ -47,6 +47,7 @@ Returns the rank of this matrix
 ### - Transpose
 Returns the Matrix -- transposed version of this matrix
 
+
 ## Heirs of class Matrix:
 ### class IdMatriix
 The identity matrix
@@ -59,13 +60,13 @@ The diagonal matrix
 ### class SymmetricMatrix
 The symmetric matrix
 
-## class PCA
-Contains:
+
+## class RSA
+### Contains:
 **Matrix** mX -- the matrix of data
 **Matrix** m_scores -- the matrix of scores (result of the PCA algorithm)
 **Matrix** m_loadings -- the matrix of loadings (result of the PCA algorithm)
 **Matrix** mE -- the matrix of residuals (result of the PCA algorithm)
-
 ### - center
 Gets the Matrix A
 Returns Matrix -- centered matrix A
@@ -83,3 +84,21 @@ Returns m_scores
 Returns m_scores
 ### - get_E
 Returns mE
+
+
+## class Residuals - heir of RSA
+### Contains:
+**std::vector\<double\>** m_lambda -- vector of principal components
+**int** mPc -- number of principal components
+### - leverages
+Returns std::vector of leverages of residual matrix
+### - mean_leverage
+Returns the mean of leverages of residual matrix
+### - variances
+Returns std::vector of variances of residual matrix
+### - mean_variance
+Returns the mean of variances of residual matrix
+### - TRV
+Returns the full dispersion of residuals
+### - ERV
+Returns the explained dispersion of residuals
